@@ -33,5 +33,6 @@ def create_token(user_id, ip, token, age=Secrets.LOCK_OUT_TIME_MINS, login_token
         raise
 
 
+# login-token creation for user authentication
 if __name__ == "__main__":
     create_token("XDGNgtznjLXqwtWpMoMizT", "127.0.0.1", Secrets.token)
